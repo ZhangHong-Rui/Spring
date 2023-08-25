@@ -1,0 +1,18 @@
+一、Maven 仓库中没有Jar包或者相应的版本怎么办？
+1.官网下载相关Jar包
+2.IDEA File -> Libraries -> + >Jar包
+
+二、IOException parsing XML document from class path resource [xxx.xml]
+Resources包下和target classes下必须有这个文件
+
+三、idea如何创建XML文件
+IDEA-> Files -> Setting -> Editor-> File and Code templates -> Files -> + <?xml version="1.0" encoding="UTF-8" ?>
+
+四、Spring解析XML 报 schemaLocation 值 必须具有偶数个 URI。
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+  xsi后面的schemaLocation必须是偶数个。
